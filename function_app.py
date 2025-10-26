@@ -4,7 +4,7 @@ import azure.functions as func
 import logging
 from elasticsearch import Elasticsearch, helpers
 
-app = func.FunctionApp()
+app = func.function_app()
 
 @app.blob_trigger(arg_name="myblob", path="raw/oxylabs",
                                connection="AzureWebJobsStorage__blobServiceUri")
