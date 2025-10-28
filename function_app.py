@@ -62,3 +62,4 @@ def blob2es(myblob: func.InputStream):
 #         f"Properties: {client.get_blob_properties()}\n"
 #         f"Blob content head: {client.download_blob().read(size=1)}"
 #     )
+
